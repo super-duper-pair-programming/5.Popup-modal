@@ -13,7 +13,7 @@ $popupModal.addEventListener('click', e => {
 
 $modalForm.addEventListener('submit', e => {
   e.preventDefault();
-  $popupMessage.innerHTML = $modalInput.value;
+  $popupMessage.innerHTML = `from popup : ${$modalInput.value}`;
   $modalInput.value = '';
   $popupModal.classList.remove('open');
 });
